@@ -26,6 +26,16 @@ matrix:
       compiler: gcc
     - os: osx
       compiler: clang
+      # power job
+    - os: linux
+      dist: trusty
+      compiler: gcc
+      arch: ppc64le
+    - os: linux
+      dist: trusty
+      compiler: clang 
+      arch: ppc64le
+      
 
 install:
   - if [ $TRAVIS_OS_NAME = linux ]; then
